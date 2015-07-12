@@ -1,0 +1,30 @@
+{
+    "name": "wait-js",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yguan/wait-js.git"
+    },
+    "description": "A simple class for waiting condition to be met",
+    "author": "Yong Guan",
+    "dependencies": { },
+    "devDependencies": { },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yguan/wait-js/issues"
+    },
+    "homepage": "https://github.com/yguan/wait-js",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "wait",
+        "browser",
+        "automation",
+        "test"
+    ]
+}
