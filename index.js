@@ -19,10 +19,10 @@ function executeFn(fn) {
  * it can be passed in as a string (e.g.: "1 == 1" or "$('#bar').is(':visible')" or
  * as a callback function.
  * @param {Function} options.onTimeout what to do when testFn condition is not fulfilled and timeout occurs.
- * @param {Number} options.timeOutMillis the max amount of time to wait. If not specified, 3 sec is used.
+ * @param {Number} options.timeoutMs the max amount of time to wait. If not specified, 3 sec is used.
  */
 module.exports.for = function (options) {
-    var maxTimeoutMillis = options.timeOutMillis || 3000, // Default Max Timeout is 3s
+    var maxTimeoutMs = options.timeoutMs || 3000, // Default Max Timeout is 3s
         start = new Date().getTime(),
         interval = setInterval(function () {
             try {
@@ -32,7 +32,7 @@ module.exports.for = function (options) {
                     return;
                 }
 
-                if (new Date().getTime() - start > maxTimeoutMillis) { // It timeouts
+                if (new Date().getTime() - start > maxTimeoutMs) { // It timeouts
                     clearInterval(interval);
                     executeFn(options.onTimeout);
                 }

@@ -17,7 +17,7 @@ wait.for({
     onTimeout: function () {
         // thing to do when timeout occurs
     },
-    timeOutMillis: 3000
+    timeoutMs: 3000
 });
 ```
 
